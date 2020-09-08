@@ -1,0 +1,27 @@
+print("""*************
+Istifadeci giris programi
+***************
+""")
+
+istifadeci_adi="Orxan"
+istifadeci_parolu="123456"
+giris_haqqi=3
+
+while True:
+    istifadeci_adi1=input("istifadeci adinizi daxil edin:")
+    istifadeci_parolu1=input("parolunuzu daxil edin:")
+    if (istifadeci_adi1==istifadeci_adi and istifadeci_parolu1!=istifadeci_parolu):
+        print("Parolunuz yalnisdir")
+        giris_haqqi-=1
+    elif (istifadeci_adi1!=istifadeci_adi and istifadeci_parolu1==istifadeci_parolu):
+        print("Istifadeci adiniz yalnisdir")
+        giris_haqqi-=1
+    elif (istifadeci_adi1!=istifadeci_adi and istifadeci_parolu1!=istifadeci_parolu):
+        print("istifadeci adi ve parolunuz yalnisdir")
+        giris_haqqi-=1
+    else:
+        print("programa giris olundu")
+        break
+    if giris_haqqi==0:
+        print("giris haqqiniz bitdi")
+        break
