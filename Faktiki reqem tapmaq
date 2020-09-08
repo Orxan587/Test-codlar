@@ -1,0 +1,19 @@
+print("""************
+faktiki reqemi tapmaq
+*************
+
+cixmaq ucun exit klikleyin""")
+
+while True:
+    reqem=input("reqem daxil edin:")
+    if (reqem=="exit"):
+        print("proqramdan cixilir")
+        break
+    else:
+        reqem=int(reqem)
+
+        faktiki_reqem=1
+
+        for o in range(2,reqem+1):
+            faktiki_reqem*=o
+        print("faktiki reqem",faktiki_reqem)
