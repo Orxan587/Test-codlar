@@ -1,0 +1,33 @@
+print("""**************
+
+Atm programi
+
+1.Balans orgenme
+2.Balans artirma
+3.Pul cekme
+******************""")
+
+miqdar=1000
+
+print("cixis ucun `exit`klikleyin")
+
+while True:
+    emeliyyat=input("Emeliyyati secin:")
+    if (emeliyyat=="exit"):
+        print("program sonlandirilir")
+        break
+    elif (emeliyyat=="1"):
+        print("Balansiniz {} manatdir".format(miqdar))
+
+    elif (emeliyyat=="2"):
+        elave_miqdar=int(input("miqdari daxil edin:"))
+        miqdar+=elave_miqdar
+
+    elif (emeliyyat=="3"):
+        elave_miqdar=int(input("miqdari daxil edin:"))
+        if (miqdar-elave_miqdar<0):
+            print("kifayet qeder mebleg yoxdur")
+            continue
+        miqdar-=elave_miqdar
+    else:
+        print("kecersiz emeliyyat")
