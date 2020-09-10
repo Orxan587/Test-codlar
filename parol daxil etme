@@ -1,0 +1,11 @@
+while True:
+    parol=input("Parolunuzu daxil edin:")
+    if not parol:
+        print("parol bolmesi bos kecile bilmez")
+
+    elif len(parol)>8 or len(parol)<3:
+        print("parolunuz 3 herfden balaca 8 herfden boyuk ola bilmez")
+
+    else:
+        print("yeni parolunuz:",parol)
+        break
