@@ -1,0 +1,63 @@
+
+
+
+
+
+
+def istifadeci_adi():
+    while True:
+
+        istifadeci__adi=input("istifadeci adinizi daxil edin:")
+        herfler="ABCDEFGHIJKLMNOPQRSTUVWXYZabsdefghijklmnopqrstuvwxyz"
+
+
+        if not istifadeci__adi:
+                    print("istifadeci adi bolmesi bos kecile bilmez")
+        for herf in istifadeci__adi:
+            o=0
+            if not herf in herfler:
+                print("istifadeci adi ancaq herflerden ibaret olmalidi")
+                o==0
+                break
+
+            elif len(istifadeci__adi)>8 or len(istifadeci__adi)<3:
+                print("istifadeci adi 8 herfden boyuk 3 herfden kicik ola bilmez")
+                o==0
+                break
+
+            else:
+                print("duzgun istifadeci adi daxil edildi")
+                return istifadeci__adi
+
+
+
+
+
+
+
+def parol():
+    while True:
+        parol_=input("parolunuzu daxil edin:")
+        reqemler="0123456789"
+
+
+        if not parol_:
+                    print("parol bolmesi bos kecile bilmez bos kecile bilmez")
+        for reqem in parol_:
+            a=0
+            if not reqem in reqemler:
+                print("parol ancaq reqemlerden ibaret olmalidi")
+                a==0
+                break
+
+            elif len(parol_)>8 or len(parol_)<3:
+                print("parol 8 reqemden boyuk 3 reqemden kicik ola bilmez")
+                a==0
+                break
+
+            else:
+               print("duzgun parol daxil edildi")
+
+               return parol_
+
+print("Istifadeci adiniz:{}Parolunuz:{}".format(istifadeci_adi(),parol()))
